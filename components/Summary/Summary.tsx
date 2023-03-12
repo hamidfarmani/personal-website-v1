@@ -1,4 +1,5 @@
-import { Container, Stack, Text, Title } from "@mantine/core";
+import { Button, Container, Group, Stack, Text, Title } from "@mantine/core";
+import { FileDownload } from "tabler-icons-react";
 
 export function Summary() {
   return (
@@ -16,6 +17,17 @@ export function Summary() {
           full-stack responsibilities.
         </Text>
       </Stack>
+      <Group position="center">
+        <Button
+          variant="outline"
+          leftIcon={<FileDownload />}
+          component="a"
+          target="_blank"
+          href="https://drive.google.com/file/d/1EsrNKthQVzyzg6yppHQPiNO29B3xNhUb/view?usp=share_link"
+        >
+          Resume
+        </Button>
+      </Group>
     </Container>
   );
 }
