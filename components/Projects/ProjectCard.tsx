@@ -7,7 +7,7 @@ import {
   Image,
   Text,
 } from "@mantine/core";
-import { ExternalLink, Star } from "tabler-icons-react";
+import { ExternalLink, Eye, Star } from "tabler-icons-react";
 import { useProjectsStyles } from "./useProjectsStyles";
 
 interface BadgeCardProps {
@@ -16,6 +16,7 @@ interface BadgeCardProps {
   country: string;
   description: string;
   url: string;
+  live_url: string;
   badges: string[];
 }
 
@@ -25,6 +26,7 @@ export function ProjectCard({
   description,
   country,
   url,
+  live_url,
   badges,
 }: BadgeCardProps) {
   const { classes, theme } = useProjectsStyles();
@@ -73,8 +75,15 @@ export function ProjectCard({
         >
           To repo
         </Button>
-        <ActionIcon variant="default" radius="md" size={36}>
-          <Star size="1.1rem" className={classes.star} />
+        <ActionIcon
+          variant="default"
+          radius="md"
+          size={36}
+          component="a"
+          target="_blank"
+          href={live_url}
+        >
+          <Eye size="1.1rem" className={classes.star} />
         </ActionIcon>
       </Group>
     </Card>

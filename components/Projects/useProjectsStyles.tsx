@@ -16,7 +16,7 @@ export const useProjectsStyles = createStyles((theme: MantineTheme) => ({
   },
 
   star: {
-    color: theme.colors.yellow[6],
+    color: theme.colors.blue[6],
   },
 
   label: {

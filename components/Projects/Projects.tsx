@@ -13,6 +13,7 @@ export function Projects() {
         country={item.country}
         badges={item.badges}
         url={item.url}
+        live_url={item.live_url}
       />
     );
   });
