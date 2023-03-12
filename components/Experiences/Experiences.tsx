@@ -3,6 +3,7 @@ import { Container, List, Tabs, Text, Title } from "@mantine/core";
 export function Experiences() {
   return (
     <Container>
+      <Title>Experiences</Title>
       <Tabs
         variant="outline"
         defaultValue="SegulaTechnologies"
