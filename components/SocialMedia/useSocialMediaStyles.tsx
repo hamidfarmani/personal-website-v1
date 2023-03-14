@@ -2,6 +2,10 @@ import { createStyles, MantineTheme } from "@mantine/core";
 
 export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
   socialMediaIcons: {
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
+    },
+
     position: "fixed",
     bottom: 0,
     left: 200,
@@ -18,6 +22,10 @@ export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
   },
 
   right: {
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
+    },
+
     position: "fixed",
     bottom: 0,
     right: 200,
