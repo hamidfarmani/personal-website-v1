@@ -8,7 +8,7 @@ export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
 
     position: "fixed",
     bottom: 0,
-    left: 200,
+    left: 130,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -28,7 +28,7 @@ export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
 
     position: "fixed",
     bottom: 0,
-    right: 200,
+    right: 130,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

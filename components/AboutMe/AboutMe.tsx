@@ -1,52 +1,84 @@
 import {
+  Button,
   Container,
-  Grid,
+  Group,
   Image,
   List,
-  Stack,
+  rem,
   Text,
+  ThemeIcon,
   Title,
 } from "@mantine/core";
+import { Check } from "tabler-icons-react";
+import { useAboutMeStyles } from "./useAboutMeStyles";
 
 export function AboutMe() {
+  const { classes } = useAboutMeStyles();
+
   return (
-    <Container>
-      <Title>About me</Title>
-      <Grid grow>
-        <Grid.Col span={8}>
-          <Stack>
-            <Text fz="lg">
-              Hello! My name is Hamid and I enjoy creating things that live on
-              the internet. My interest in web development started back in 2014
-              when I decided to study computer engineering at university!
+    <div>
+      <Container>
+        <div className={classes.inner}>
+          <div className={classes.content}>
+            <Title className={classes.title}>
+              A product <span className={classes.highlight}>enthusiast </span>
+              <br /> at heart
+            </Title>
+            <Text color="dimmed" mt="md">
+              I&apos;m a fun-loving and dynamic professional who enjoys working
+              with others. I&apos;m a proactive team player who&apos;s always
+              motivated to take on new challenges. I have great problem-solving
+              and communication skills that help me work effectively with
+              others.
             </Text>
-            <Text>
-              Fast-forward to today, and I’ve had the privilege of working at a
-              consultant company, a fintech company and a start-up. My main
-              focus these days is building accessible, inclusive products and
-              digital experiences at Segula technologies for a variety of
-              clients. Here are a few technologies I’ve been working with
-              recently:
-            </Text>
-            <List>
-              <List.Item>Java</List.Item>
-              <List.Item>Spring boot</List.Item>
-              <List.Item>React</List.Item>
-              <List.Item>Amazon Web Service (AWS)</List.Item>
-              <List.Item>MySQL</List.Item>
+
+            <List
+              mt={30}
+              spacing="sm"
+              size="sm"
+              icon={
+                <ThemeIcon size={20} radius="xl">
+                  <Check size={rem(12)} />
+                </ThemeIcon>
+              }
+            >
+              <List.Item>
+                <b>As an employee</b> - build scalable and safe applications,
+                with different features, new ideas and sometime cool bugs!
+              </List.Item>
+              <List.Item>
+                <b>Personal projects</b> - try out different APIs, new languages
+                and frameworks
+              </List.Item>
+              <List.Item>
+                <b>My interests</b> - playing Basketball and Chess, traveling,
+                fishing, watching movies and spending time with my wife
+              </List.Item>
             </List>
-          </Stack>
-        </Grid.Col>
-        <Grid.Col span={4}>
+
+            <Group mt={30}>
+              <Button radius="xl" size="md" className={classes.control}>
+                Get started
+              </Button>
+              <Button
+                variant="default"
+                radius="xl"
+                size="md"
+                className={classes.control}
+              >
+                Source code
+              </Button>
+            </Group>
+          </div>
           <Image
-            maw={300}
             mx="auto"
             radius="md"
-            alt="My Image"
             src="/pic.jpg"
+            alt="my image"
+            className={classes.image}
           />
-        </Grid.Col>
-      </Grid>
-    </Container>
+        </div>
+      </Container>
+    </div>
   );
 }
