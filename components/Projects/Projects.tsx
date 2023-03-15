@@ -18,7 +18,7 @@ export function Projects() {
     );
   });
   return (
-    <Container>
+    <Container id="projects">
       <Title>Projects</Title>
       <SimpleGrid cols={3}>{projectCards}</SimpleGrid>
     </Container>

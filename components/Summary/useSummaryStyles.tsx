@@ -3,7 +3,7 @@ import { createStyles, rem } from "@mantine/core";
 export const useSummaryStyles = createStyles((theme) => ({
   wrapper: {
     position: "relative",
-    paddingTop: rem(120),
+    paddingTop: rem(220),
     paddingBottom: rem(80),
 
     [theme.fn.smallerThan("sm")]: {
@@ -18,6 +18,7 @@ export const useSummaryStyles = createStyles((theme) => ({
   },
 
   dots: {
+    marginTop: 100,
     position: "absolute",
     color:
       theme.colorScheme === "dark"

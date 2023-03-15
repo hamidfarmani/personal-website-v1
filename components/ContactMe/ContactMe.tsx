@@ -2,7 +2,7 @@ import { Container, Text, Title } from "@mantine/core";
 
 export function ContactMe() {
   return (
-    <Container>
+    <Container id="contact-me">
       <Title>Contact Me</Title>
       <Text>
         Although I am not actively seeking new job opportunities at this time, I

@@ -15,9 +15,10 @@ import { useHeaderStyles } from "./useHeaderStyles";
 const HEADER_HEIGHT = rem(60);
 
 const links = [
-  { link: "Link1", label: "Label1" },
-  { link: "Link2", label: "Label2" },
-  { link: "Link3", label: "Label3" },
+  { link: "about-me", label: "About me" },
+  { link: "experiences", label: "Experiences" },
+  { link: "projects", label: "Projects" },
+  { link: "contact-me", label: "Contact me" },
 ];
 
 export function HeaderResponsive() {
@@ -34,6 +35,12 @@ export function HeaderResponsive() {
       })}
       onClick={(event) => {
         event.preventDefault();
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.getElementById(link.link)!.offsetTop - 60,
+            behavior: "smooth",
+          });
+        }, 100);
         setActive(link.link);
         close();
       }}

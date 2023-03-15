@@ -16,7 +16,7 @@ export function AboutMe() {
   const { classes } = useAboutMeStyles();
 
   return (
-    <div>
+    <div id="about-me">
       <Container>
         <div className={classes.inner}>
           <div className={classes.content}>

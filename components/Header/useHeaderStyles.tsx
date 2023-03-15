@@ -6,8 +6,8 @@ const HEADER_HEIGHT = rem(60);
 
 export const useHeaderStyles = createStyles((theme: MantineTheme) => ({
   root: {
-    position: "relative",
-    zIndex: 1,
+    position: "fixed",
+    zIndex: 999,
   },
 
   dropdown: {

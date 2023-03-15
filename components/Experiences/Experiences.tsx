@@ -2,7 +2,7 @@ import { Container, List, Tabs, Text, Title } from "@mantine/core";
 
 export function Experiences() {
   return (
-    <Container>
+    <Container id="experiences">
       <Title>Experiences</Title>
       <Tabs
         variant="outline"
