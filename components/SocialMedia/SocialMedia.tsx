@@ -62,7 +62,9 @@ export function SocialMedia() {
       </Stack>
 
       <Stack className={classes.right}>
-        <Text className={classes.verticalText}>Hamidfarmani1@gmail.com</Text>
+        <Text c="dimmed" className={classes.verticalText}>
+          Hamidfarmani1@gmail.com
+        </Text>
         <Text className={classes.lineRight}></Text>
       </Stack>
     </Container>

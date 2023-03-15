@@ -17,8 +17,8 @@ export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
   },
 
   lineLeft: {
-    borderLeft: "2px solid gray",
-    height: 150,
+    borderRight: "1.5px solid #868e96",
+    height: 90,
   },
 
   right: {
@@ -37,8 +37,8 @@ export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
   },
 
   lineRight: {
-    borderRight: "2px solid gray",
-    height: 150,
+    borderRight: "1.5px solid #868e96",
+    height: 90,
   },
 
   verticalText: {
