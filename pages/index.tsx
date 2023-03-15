@@ -17,7 +17,6 @@ export default function Home() {
         <Transition transition="slide-up" mounted={scroll.y > 0}>
           {(transitionStyles) => (
             <Button
-              variant="outline"
               leftIcon={<ArrowUp size="1rem" />}
               style={transitionStyles}
               onClick={() => scrollTo({ y: 0 })}
