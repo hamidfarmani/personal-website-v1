@@ -1,5 +1,7 @@
 import {
+  ActionIcon,
   Burger,
+  ColorScheme,
   Container,
   Group,
   Header,
@@ -10,6 +12,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
+import { MoonStars, Sun } from "tabler-icons-react";
 import { useHeaderStyles } from "./useHeaderStyles";
 
 const HEADER_HEIGHT = rem(60);
@@ -21,7 +24,13 @@ const links = [
   { link: "contact-me", label: "Contact me" },
 ];
 
-export function HeaderResponsive() {
+export function HeaderResponsive({
+  colorScheme,
+  toggleColorScheme,
+}: {
+  colorScheme: ColorScheme;
+  toggleColorScheme: Function;
+}) {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useHeaderStyles();
@@ -53,8 +62,30 @@ export function HeaderResponsive() {
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
         <Text>Hamid Farmani</Text>
-        <Group spacing={5} className={classes.links}>
-          {items}
+        <Group position="right">
+          <Group spacing={5} className={classes.links}>
+            {items}
+          </Group>
+          <ActionIcon
+            onClick={() => toggleColorScheme()}
+            size="lg"
+            sx={(theme) => ({
+              backgroundColor:
+                theme.colorScheme === "dark"
+                  ? theme.colors.dark[6]
+                  : theme.colors.gray[0],
+              color:
+                theme.colorScheme === "dark"
+                  ? theme.colors.yellow[4]
+                  : theme.colors.blue[6],
+            })}
+          >
+            {colorScheme === "dark" ? (
+              <Sun size="1.2rem" />
+            ) : (
+              <MoonStars size="1.2rem" />
+            )}
+          </ActionIcon>
         </Group>
 
         <Burger
