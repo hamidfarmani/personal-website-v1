@@ -1,7 +1,5 @@
 import {
-  Button,
   Container,
-  Group,
   Image,
   List,
   rem,
@@ -16,7 +14,7 @@ export function AboutMe() {
   const { classes } = useAboutMeStyles();
 
   return (
-    <div id="about-me">
+    <div className={classes.wrapper} id="about-me">
       <Container>
         <div className={classes.inner}>
           <div className={classes.content}>
@@ -55,20 +53,6 @@ export function AboutMe() {
                 fishing, watching movies and spending time with my wife
               </List.Item>
             </List>
-
-            <Group mt={30}>
-              <Button radius="xl" size="md" className={classes.control}>
-                Get started
-              </Button>
-              <Button
-                variant="default"
-                radius="xl"
-                size="md"
-                className={classes.control}
-              >
-                Source code
-              </Button>
-            </Group>
           </div>
           <Image
             mx="auto"

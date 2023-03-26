@@ -2,6 +2,7 @@ import { createStyles, rem } from "@mantine/core";
 
 export const useExperiencesStyles = createStyles((theme) => ({
   wrapper: {
+    minHeight: "80vh",
     position: "relative",
     boxSizing: "border-box",
     backgroundColor:
@@ -34,18 +35,9 @@ export const useExperiencesStyles = createStyles((theme) => ({
     },
   },
 
-  description: {
-    marginTop: theme.spacing.xl,
-    fontSize: rem(20),
-
-    [theme.fn.smallerThan("sm")]: {
-      fontSize: rem(18),
-    },
-  },
-
   tabs: {
-    fontWeight: 500,
-    padding: `${theme.spacing.md} ${theme.spacing.md}`,
+    fontWeight: 700,
+    padding: `${theme.spacing.lg} ${theme.spacing.lg}`,
   },
 
   tabInner: {

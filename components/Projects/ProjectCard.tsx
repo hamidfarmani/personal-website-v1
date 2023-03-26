@@ -7,6 +7,7 @@ import {
   Image,
   Text,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { ExternalLink, Eye, Star } from "tabler-icons-react";
 import { useProjectsStyles } from "./useProjectsStyles";
 
@@ -29,10 +30,12 @@ export function ProjectCard({
   live_url,
   badges,
 }: BadgeCardProps) {
+  const largeScreen = useMediaQuery("(min-width: 60em)");
+
   const { classes, theme } = useProjectsStyles();
 
   const features = badges.map((badge) => (
-    <Badge color={theme.colorScheme === "dark" ? "dark" : "gray"} key={badge}>
+    <Badge color={theme.colorScheme === "light" ? "dark" : "gray"} key={badge}>
       {badge}
     </Badge>
   ));
@@ -50,7 +53,7 @@ export function ProjectCard({
           </Text>
           <Badge size="sm">{country}</Badge>
         </Group>
-        <Text fz="sm" mt="xs">
+        <Text fz="sm" mt="xs" lineClamp={7} mih={largeScreen ? 151 : 120}>
           {description}
         </Text>
       </Card.Section>

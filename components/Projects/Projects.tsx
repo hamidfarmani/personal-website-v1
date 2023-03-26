@@ -1,8 +1,13 @@
-import { Container, SimpleGrid, Title } from "@mantine/core";
+import { Container, SimpleGrid, Text, Title } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { myProjectsData } from "./MyProjectsData";
 import { ProjectCard } from "./ProjectCard";
+import { useProjectsStyles } from "./useProjectsStyles";
 
 export function Projects() {
+  const largeScreen = useMediaQuery("(min-width: 60em)");
+  const { classes, theme } = useProjectsStyles();
+
   const projectCards = myProjectsData.map((item) => {
     return (
       <ProjectCard
@@ -18,9 +23,20 @@ export function Projects() {
     );
   });
   return (
-    <Container id="projects">
-      <Title>Projects</Title>
-      <SimpleGrid cols={3}>{projectCards}</SimpleGrid>
-    </Container>
+    <div className={classes.wrapper} id="projects">
+      <Container className={classes.inner}>
+        <Title mb="md">
+          <Text
+            component="span"
+            variant="gradient"
+            gradient={{ from: "blue", to: "cyan" }}
+            inherit
+          >
+            Projects
+          </Text>
+        </Title>
+        <SimpleGrid cols={largeScreen ? 3 : 1}>{projectCards}</SimpleGrid>
+      </Container>
+    </div>
   );
 }

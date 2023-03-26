@@ -9,8 +9,9 @@ export function Summary() {
     <Container className={classes.wrapper} size={1400}>
       <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
       <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
-      <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
-      <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
+      <Dots className={classes.dots} style={{ left: 0, top: 80 }} />
+      <Dots className={classes.dots} style={{ right: 0, top: 50 }} />
+      <Dots className={classes.dots} style={{ right: 20, top: 50 }} />
 
       <div className={classes.inner}>
         <Title className={classes.title}>
@@ -41,9 +42,6 @@ export function Summary() {
             href="https://drive.google.com/file/d/1EsrNKthQVzyzg6yppHQPiNO29B3xNhUb/view?usp=share_link"
           >
             Check my resume
-          </Button>
-          <Button className={classes.control} size="lg">
-            Purchase a license
           </Button>
         </div>
       </div>

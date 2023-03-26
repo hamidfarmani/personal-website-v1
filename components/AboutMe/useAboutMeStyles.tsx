@@ -1,6 +1,16 @@
 import { createStyles, rem } from "@mantine/core";
 
 export const useAboutMeStyles = createStyles((theme) => ({
+  wrapper: {
+    minHeight: "100vh",
+    position: "relative",
+    boxSizing: "border-box",
+    backgroundColor:
+      theme.colorScheme === "dark"
+        ? theme.colors.dark[6]
+        : theme.colors.gray[2],
+  },
+
   inner: {
     display: "flex",
     justifyContent: "space-between",

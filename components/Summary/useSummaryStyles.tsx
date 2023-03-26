@@ -2,8 +2,9 @@ import { createStyles, rem } from "@mantine/core";
 
 export const useSummaryStyles = createStyles((theme) => ({
   wrapper: {
+    minHeight: "100vh",
     position: "relative",
-    paddingTop: rem(220),
+    paddingTop: rem(250),
     paddingBottom: rem(80),
 
     [theme.fn.smallerThan("sm")]: {
@@ -18,7 +19,7 @@ export const useSummaryStyles = createStyles((theme) => ({
   },
 
   dots: {
-    marginTop: 100,
+    marginTop: 250,
     position: "absolute",
     color:
       theme.colorScheme === "dark"
@@ -41,7 +42,7 @@ export const useSummaryStyles = createStyles((theme) => ({
     fontSize: rem(40),
     letterSpacing: -1,
     color: theme.colorScheme === "dark" ? theme.white : theme.black,
-    marginBottom: theme.spacing.xs,
+    marginBottom: theme.spacing.xl,
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
     [theme.fn.smallerThan("xs")]: {
