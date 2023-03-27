@@ -6,6 +6,7 @@ import { SocialMedia } from "@/components/SocialMedia/SocialMedia";
 import { Summary } from "@/components/Summary/Summary";
 import { Affix, Button, rem, Transition } from "@mantine/core";
 import { useWindowScroll } from "@mantine/hooks";
+import Head from "next/head";
 import { ArrowUp } from "tabler-icons-react";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Hamid Farmani</title>
+      </Head>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
         <Transition transition="slide-up" mounted={scroll.y > 0}>
           {(transitionStyles) => (

@@ -1,8 +1,10 @@
-import { Button, Container, Text, Title } from "@mantine/core";
+import { Button, Container, Image, Text, Title } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { Dots } from "./Dots";
 import { useSummaryStyles } from "./useSummaryStyles";
 
 export function Summary() {
+  const largeScreen = useMediaQuery("(min-width: 60em)");
   const { classes } = useSummaryStyles();
 
   return (
@@ -45,6 +47,12 @@ export function Summary() {
           </Button>
         </div>
       </div>
+
+      {largeScreen ? (
+        <Image alt="programmer" height={450} mx="auto" src="/programmer.svg" />
+      ) : (
+        ""
+      )}
     </Container>
   );
 }

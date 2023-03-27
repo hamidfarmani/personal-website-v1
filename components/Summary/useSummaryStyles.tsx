@@ -4,12 +4,12 @@ export const useSummaryStyles = createStyles((theme) => ({
   wrapper: {
     minHeight: "100vh",
     position: "relative",
-    paddingTop: rem(250),
-    paddingBottom: rem(80),
+    paddingTop: rem(150),
 
     [theme.fn.smallerThan("sm")]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(60),
+      minHeight: "70vh",
+
+      paddingTop: rem(100),
     },
   },
 
