@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Website
+
+This is my personal website, a web application built with Next.js and Mantine. It showcases my personal projects and interests, as well as providing information about me and my skills as a developer. It includes a projects section with details about the projects I've worked on, as well as an about me section where I share my interests and experience.
 
 ## Getting Started
 
-First, run the development server:
+To run this application, you will need to have Node.js and npm installed on your machine. You can then follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone this repository: `git clone https://github.com/hamidfarmani/personal-website-v1.git`
+2. Navigate to the project directory: `cd personal-website-v1`
+3. Install dependencies: `yarn`
+4. Start the development server: `yarn run dev`
+5. Open http://localhost:3000 in your web browser to view the application
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+This web application includes the following features:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- A home section showcasing my introduction as well as a link to my resume
+- An about me section with a picture of me and details about my skills, experience, and interests
+- An experiences section showing different companies that I worked in with my responsibilities
+- A projects section displaying cards with details about each project, including a screenshot, name, description, technologies used, and links to the source code and live version
+- A contact section with a form to send me a message
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This web application was built using the following technologies:
 
-## Learn More
+- Next.js: A React framework for building server-side rendered web applications
+- Mantine: A React component library for building modern web applications
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [MIT license](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this software for commercial or non-commercial purposes, as long as you include the original copyright and license notice in any copies or distributions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributions
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions, feedback, and bug reports are welcome! Please feel free to fork this repository and submit pull requests with your improvements or submit issues to report any problems or suggest new features.
