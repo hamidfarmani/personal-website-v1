@@ -6,7 +6,7 @@ import { useProjectsStyles } from "./useProjectsStyles";
 
 export function Projects() {
   const largeScreen = useMediaQuery("(min-width: 60em)");
-  const { classes, theme } = useProjectsStyles();
+  const { classes } = useProjectsStyles();
 
   const projectCards = myProjectsData.map((item) => {
     return (

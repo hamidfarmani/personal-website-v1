@@ -18,16 +18,6 @@ export const useAboutMeStyles = createStyles((theme) => ({
     paddingBottom: `calc(${theme.spacing.xl} * 4)`,
   },
 
-  content: {
-    maxWidth: rem(480),
-    marginRight: `calc(${theme.spacing.xl} * 3)`,
-
-    [theme.fn.smallerThan("md")]: {
-      maxWidth: "100%",
-      marginRight: 0,
-    },
-  },
-
   title: {
     color: theme.colorScheme === "dark" ? theme.white : theme.black,
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
@@ -37,20 +27,6 @@ export const useAboutMeStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan("xs")]: {
       fontSize: rem(28),
-    },
-  },
-
-  control: {
-    [theme.fn.smallerThan("xs")]: {
-      flex: 1,
-    },
-  },
-
-  image: {
-    flex: 1,
-
-    [theme.fn.smallerThan("md")]: {
-      display: "none",
     },
   },
 

@@ -31,11 +31,6 @@ export const useSummaryStyles = createStyles((theme) => ({
     },
   },
 
-  dotsLeft: {
-    left: 0,
-    top: 0,
-  },
-
   title: {
     textAlign: "center",
     fontWeight: 800,
@@ -65,29 +60,12 @@ export const useSummaryStyles = createStyles((theme) => ({
     },
   },
 
-  controls: {
-    marginTop: theme.spacing.lg,
-    display: "flex",
-    justifyContent: "center",
-
-    [theme.fn.smallerThan("xs")]: {
-      flexDirection: "column",
-    },
-  },
-
   control: {
-    "&:not(:first-of-type)": {
-      marginLeft: theme.spacing.md,
-    },
+    marginTop: theme.spacing.lg,
 
     [theme.fn.smallerThan("xs")]: {
       height: rem(42),
       fontSize: theme.fontSizes.md,
-
-      "&:not(:first-of-type)": {
-        marginTop: theme.spacing.md,
-        marginLeft: 0,
-      },
     },
   },
 }));

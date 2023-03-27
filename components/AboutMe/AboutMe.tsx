@@ -3,23 +3,26 @@ import {
   Image,
   List,
   rem,
+  SimpleGrid,
   Text,
   ThemeIcon,
   Title,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { Check } from "tabler-icons-react";
 import { useAboutMeStyles } from "./useAboutMeStyles";
 
 export function AboutMe() {
+  const largeScreen = useMediaQuery("(min-width: 60em)");
   const { classes } = useAboutMeStyles();
 
   return (
     <div className={classes.wrapper} id="about-me">
-      <Container>
-        <div className={classes.inner}>
-          <div className={classes.content}>
+      <Container className={classes.inner}>
+        <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xs">
+          <div>
             <Title className={classes.title}>
-              A product <span className={classes.highlight}>enthusiast </span>
+              A product <span className={classes.highlight}>enthusiast</span>
               <br /> at heart
             </Title>
             <Text color="dimmed" mt="md">
@@ -54,14 +57,10 @@ export function AboutMe() {
               </List.Item>
             </List>
           </div>
-          <Image
-            mx="auto"
-            radius="md"
-            src="/pic.jpg"
-            alt="my image"
-            className={classes.image}
-          />
-        </div>
+          <div>
+            <Image mx="auto" radius="md" src="/pic.jpg" alt="my image" />
+          </div>
+        </SimpleGrid>
       </Container>
     </div>
   );

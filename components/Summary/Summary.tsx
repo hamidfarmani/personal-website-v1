@@ -1,4 +1,4 @@
-import { Button, Container, Image, Text, Title } from "@mantine/core";
+import { Button, Container, Group, Image, Text, Title } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { Dots } from "./Dots";
 import { useSummaryStyles } from "./useSummaryStyles";
@@ -32,7 +32,7 @@ export function Summary() {
           </Text>
         </Container>
 
-        <div className={classes.controls}>
+        <Group position="center">
           <Button
             className={classes.control}
             size="lg"
@@ -45,7 +45,7 @@ export function Summary() {
           >
             Check my resume
           </Button>
-        </div>
+        </Group>
       </div>
 
       {largeScreen ? (
