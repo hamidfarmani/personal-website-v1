@@ -10,7 +10,7 @@ export function Experiences() {
   return (
     <div className={classes.wrapper} id="experiences">
       <Container className={classes.inner}>
-        <Title>
+        <Title mb="xs">
           <Text
             component="span"
             variant="gradient"
@@ -22,7 +22,13 @@ export function Experiences() {
         </Title>
 
         <Text color="dimmed">
-          I started working when I was a freshman in university
+          My professional journey has been filled with diverse experiences in
+          various companies. From product and industrial development to real
+          estate crowdfunding, I have gained valuable skills in Java, Spring
+          Boot, React, and more. Below are some of the companies I have had the
+          privilege to work with, along with a brief description of my
+          responsibilities and the skills I utilized. Take a closer look and
+          discover how I can contribute to your organization.
         </Text>
         <Tabs
           mt="md"

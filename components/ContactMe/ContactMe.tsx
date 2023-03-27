@@ -8,7 +8,7 @@ export function ContactMe() {
   return (
     <div className={classes.wrapper} id="contact-me">
       <Container>
-        <Title mb="md">
+        <Title mb="xs">
           <Text
             component="span"
             variant="gradient"

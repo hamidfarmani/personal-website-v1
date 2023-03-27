@@ -25,7 +25,7 @@ export function Projects() {
   return (
     <div className={classes.wrapper} id="projects">
       <Container className={classes.inner}>
-        <Title mb="md">
+        <Title mb="xs">
           <Text
             component="span"
             variant="gradient"
@@ -35,7 +35,18 @@ export function Projects() {
             Projects
           </Text>
         </Title>
-        <SimpleGrid cols={largeScreen ? 3 : 1}>{projectCards}</SimpleGrid>
+        <Text color="dimmed">
+          In my free time, I love tinkering with new technologies and
+          experimenting with new ideas. Check out some of the cool projects
+          I&apos;ve been working on! From visualizing sorting algorithms to
+          creating a personalized Spotify data dashboard, these projects
+          showcase my passion for coding and creativity. Browse through the
+          cards below and get a glimpse of the tech stack, main language, and
+          tools I used to build these awesome projects.
+        </Text>
+        <SimpleGrid mt="md" cols={largeScreen ? 3 : 1}>
+          {projectCards}
+        </SimpleGrid>
       </Container>
     </div>
   );
