@@ -15,7 +15,7 @@ export function Summary() {
       <Dots className={classes.dots} style={{ right: 0, top: 50 }} />
       <Dots className={classes.dots} style={{ right: 20, top: 50 }} />
 
-      <div className={classes.inner}>
+      <div>
         <Title className={classes.title}>
           I&apos;m{" "}
           <Text component="span" className={classes.highlight} inherit>

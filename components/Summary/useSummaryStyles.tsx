@@ -13,11 +13,6 @@ export const useSummaryStyles = createStyles((theme) => ({
     },
   },
 
-  inner: {
-    position: "relative",
-    zIndex: 1,
-  },
-
   dots: {
     marginTop: 250,
     position: "absolute",

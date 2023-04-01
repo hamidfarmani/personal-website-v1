@@ -2,7 +2,7 @@ import { createStyles, MantineTheme } from "@mantine/core";
 
 export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
   socialMediaIcons: {
-    [theme.fn.smallerThan("sm")]: {
+    [theme.fn.smallerThan("lg")]: {
       display: "none",
     },
 
@@ -22,7 +22,7 @@ export const useSocialMediaStyles = createStyles((theme: MantineTheme) => ({
   },
 
   right: {
-    [theme.fn.smallerThan("sm")]: {
+    [theme.fn.smallerThan("lg")]: {
       display: "none",
     },
 
