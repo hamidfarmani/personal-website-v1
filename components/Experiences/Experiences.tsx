@@ -1,6 +1,13 @@
-import { Container, List, Tabs, Text, Title } from "@mantine/core";
+import { Container, List, Tabs, Text, Title, Image } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { useExperiencesStyles } from "./useExperiencesStyles";
+import viaplay from "./logos/viaplay.png";
+import segula from "./logos/segula.png";
+import gsm from "./logos/gsm.png";
+import wirelesscar from "./logos/wirelesscar.png";
+import eg from "./logos/eg.png";
+import golestan from "./logos/golestan.png";
+import avihang from "./logos/avihang.png";
 
 export function Experiences() {
   const largeScreen = useMediaQuery("(min-width: 60em)");
@@ -33,30 +40,84 @@ export function Experiences() {
         <Tabs
           mt="md"
           variant={largeScreen ? "outline" : "pills"}
-          defaultValue="SegulaTechnologies"
+          defaultValue="Viaplay"
           orientation={largeScreen ? "vertical" : "horizontal"}
         >
           <Tabs.List>
-            <Tabs.Tab className={classes.tabs} value="SegulaTechnologies">
+            <Tabs.Tab
+              className={classes.tabs}
+              value="Viaplay"
+              icon={<Image src={viaplay.src} width="1.5rem" />}
+            >
+              Viaplay Group
+            </Tabs.Tab>
+            <Tabs.Tab
+              className={classes.tabs}
+              value="SegulaTechnologies"
+              icon={<Image src={segula.src} width="1.5rem" />}
+            >
               Segula Technologies
             </Tabs.Tab>
-            <Tabs.Tab className={classes.tabs} value="GSM">
+            <Tabs.Tab
+              className={classes.tabs}
+              value="GSM"
+              icon={<Image src={gsm.src} width="1.5rem" />}
+            >
               GSM Electric
             </Tabs.Tab>
-            <Tabs.Tab className={classes.tabs} value="WirelessCar">
+            <Tabs.Tab
+              className={classes.tabs}
+              value="WirelessCar"
+              icon={<Image src={wirelesscar.src} width="1.5rem" />}
+            >
               WirelessCar
             </Tabs.Tab>
-            <Tabs.Tab className={classes.tabs} value="EstateGuru">
+            <Tabs.Tab
+              className={classes.tabs}
+              value="EstateGuru"
+              icon={<Image src={eg.src} width="1.5rem" />}
+            >
               EstateGuru
             </Tabs.Tab>
-            <Tabs.Tab className={classes.tabs} value="Golestan">
+            <Tabs.Tab
+              className={classes.tabs}
+              value="Golestan"
+              icon={<Image src={golestan.src} width="1.5rem" />}
+            >
               Golestan University
             </Tabs.Tab>
-            <Tabs.Tab className={classes.tabs} value="Avihang">
+            <Tabs.Tab
+              className={classes.tabs}
+              value="Avihang"
+              icon={<Image src={avihang.src} width="1.5rem" />}
+            >
               Avihang
             </Tabs.Tab>
           </Tabs.List>
 
+          <Tabs.Panel value="Viaplay" className={classes.tabInner}>
+            <Title pb="xs">Viaplay Group</Title>
+            <Text pb="xs" size="sm" fs="italic">
+              Viaplay Group AB, formerly known as Nordic Entertainment Group AB,
+              is a Swedish media and entertainment company headquartered in
+              Stockholm. The company operates the video streaming services
+              Viaplay, advertising-funded TV and radio channels, as well as the
+              studio production company Viaplay Studios.
+            </Text>
+            {/* <List pb="xs" size="lg">
+              <List.Item>
+                Designed and launched an inhouse-project which was an assignment
+                collector that gathers opportunities from various portals,
+                enabling employees to browse and apply for new assignments and
+                inform their managers online.
+              </List.Item>
+            </List>
+
+            <Text pb="xs" c="dimmed">
+              Skills: Java, Spring boot, Azure, MySql, CI/CD The customers that
+              I worked for as a consultant were WirelessCar and GSM electric.
+            </Text> */}
+          </Tabs.Panel>
           <Tabs.Panel value="SegulaTechnologies" className={classes.tabInner}>
             <Title pb="xs">Segula Technologies</Title>
             <Text pb="xs" size="sm" fs="italic">
