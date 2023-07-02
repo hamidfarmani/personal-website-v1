@@ -11,7 +11,7 @@ export default function App(props: AppProps) {
   const { Component, pageProps } = props;
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: "mantine-color-scheme",
-    defaultValue: "light",
+    defaultValue: "dark",
     getInitialValueInEffect: true,
   });
   const toggleColorScheme = (value?: ColorScheme) =>

@@ -106,19 +106,17 @@ export function Experiences() {
               Viaplay, advertising-funded TV and radio channels, as well as the
               studio production company Viaplay Studios.
             </Text>
-            {/* <List pb="xs" size="lg">
+            <List pb="xs" size="lg">
               <List.Item>
-                Designed and launched an inhouse-project which was an assignment
-                collector that gathers opportunities from various portals,
-                enabling employees to browse and apply for new assignments and
-                inform their managers online.
+                Designed and implemented a high-performing microservices that
+                seamlessly integrated with multiple services, providing
+                essential data to upper layers
               </List.Item>
             </List>
 
             <Text pb="xs" c="dimmed">
-              Skills: Java, Spring boot, Azure, MySql, CI/CD The customers that
-              I worked for as a consultant were WirelessCar and GSM electric.
-            </Text> */}
+              Skills: Java, Quarkus, AWS, Camunda, K8S, MySql, CI/CD
+            </Text>
           </Tabs.Panel>
           <Tabs.Panel value="SegulaTechnologies" className={classes.tabInner}>
             <Title pb="xs">Segula Technologies</Title>
