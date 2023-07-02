@@ -1,0 +1,10 @@
+.mouse-highlight {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 700px;
+    height: 700px;
+    border-radius: 90%;
+    pointer-events: none;
+    z-index: 9999;
+  }

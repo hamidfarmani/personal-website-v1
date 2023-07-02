@@ -8,6 +8,7 @@ import { Affix, Button, rem, Transition } from "@mantine/core";
 import { useWindowScroll } from "@mantine/hooks";
 import Head from "next/head";
 import { ArrowUp } from "tabler-icons-react";
+import MouseHighlight from "@/components/MouseHighlight/MouseHighlight";
 
 export default function Home() {
   const [scroll, scrollTo] = useWindowScroll();
@@ -17,6 +18,7 @@ export default function Home() {
       <Head>
         <title>Hamid Farmani</title>
       </Head>
+      <MouseHighlight />
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
         <Transition transition="slide-up" mounted={scroll.y > 0}>
           {(transitionStyles) => (

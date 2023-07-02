@@ -6,6 +6,7 @@ import {
 } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { AppProps } from "next/app";
+import "../components/MouseHighlight/style.css";
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
