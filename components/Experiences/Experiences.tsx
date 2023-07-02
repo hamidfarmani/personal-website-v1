@@ -47,49 +47,51 @@ export function Experiences() {
             <Tabs.Tab
               className={classes.tabs}
               value="Viaplay"
-              icon={<Image src={viaplay.src} width="1.5rem" />}
+              icon={<Image src={viaplay.src} width="1.5rem" alt="Viaplay" />}
             >
               Viaplay Group
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
               value="SegulaTechnologies"
-              icon={<Image src={segula.src} width="1.5rem" />}
+              icon={<Image src={segula.src} width="1.5rem" alt="Segula" />}
             >
               Segula Technologies
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
               value="GSM"
-              icon={<Image src={gsm.src} width="1.5rem" />}
+              icon={<Image src={gsm.src} width="1.5rem" alt="GSM" />}
             >
               GSM Electric
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
               value="WirelessCar"
-              icon={<Image src={wirelesscar.src} width="1.5rem" />}
+              icon={
+                <Image src={wirelesscar.src} width="1.5rem" alt="WirelessCar" />
+              }
             >
               WirelessCar
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
               value="EstateGuru"
-              icon={<Image src={eg.src} width="1.5rem" />}
+              icon={<Image src={eg.src} width="1.5rem" alt="EstateGuru" />}
             >
               EstateGuru
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
               value="Golestan"
-              icon={<Image src={golestan.src} width="1.5rem" />}
+              icon={<Image src={golestan.src} width="1.5rem" alt="Golestan" />}
             >
               Golestan University
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
               value="Avihang"
-              icon={<Image src={avihang.src} width="1.5rem" />}
+              icon={<Image src={avihang.src} width="1.5rem" alt="Avihang" />}
             >
               Avihang
             </Tabs.Tab>
@@ -128,16 +130,29 @@ export function Experiences() {
             </Text>
             <List pb="xs" size="lg">
               <List.Item>
+                Designed and implemented the software part of MiniRobot project,
+                integrating ChatGPT and Whisper to gather user feedback and
+                provide information about the Segula company.
+              </List.Item>
+              <List.Item>
                 Designed and launched an inhouse-project which was an assignment
                 collector that gathers opportunities from various portals,
                 enabling employees to browse and apply for new assignments and
                 inform their managers online.
               </List.Item>
+              <List.Item>
+                Developed a web application for Segula&apos;s employee
+                directory, enabling search and matching of specific skills for
+                work packages, improving team formation and productivity.
+              </List.Item>
             </List>
 
             <Text pb="xs" c="dimmed">
-              Skills: Java, Spring boot, Azure, MySql, CI/CD The customers that
-              I worked for as a consultant were WirelessCar and GSM electric.
+              Skills: Java, Spring boot, Azure, MySql, CI/CD
+            </Text>
+            <Text pb="xs" c="dimmed" fs="italic">
+              The customers that I worked for as a consultant were WirelessCar
+              and GSM electric.
             </Text>
           </Tabs.Panel>
           <Tabs.Panel value="GSM" className={classes.tabInner}>
