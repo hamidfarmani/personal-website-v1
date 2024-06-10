@@ -1,13 +1,11 @@
-import { Container, List, Tabs, Text, Title, Image } from "@mantine/core";
+import { Container, Image, List, Tabs, Text, Title } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import { useExperiencesStyles } from "./useExperiencesStyles";
-import viaplay from "./logos/viaplay.png";
-import segula from "./logos/segula.png";
-import gsm from "./logos/gsm.png";
-import wirelesscar from "./logos/wirelesscar.png";
+import avihang from "./logos/avihang.png";
 import eg from "./logos/eg.png";
 import golestan from "./logos/golestan.png";
-import avihang from "./logos/avihang.png";
+import segula from "./logos/segula.png";
+import viaplay from "./logos/viaplay.png";
+import { useExperiencesStyles } from "./useExperiencesStyles";
 
 export function Experiences() {
   const largeScreen = useMediaQuery("(min-width: 60em)");
@@ -57,22 +55,6 @@ export function Experiences() {
               icon={<Image src={segula.src} width="1.5rem" alt="Segula" />}
             >
               Segula Technologies
-            </Tabs.Tab>
-            <Tabs.Tab
-              className={classes.tabs}
-              value="GSM"
-              icon={<Image src={gsm.src} width="1.5rem" alt="GSM" />}
-            >
-              GSM Electric
-            </Tabs.Tab>
-            <Tabs.Tab
-              className={classes.tabs}
-              value="WirelessCar"
-              icon={
-                <Image src={wirelesscar.src} width="1.5rem" alt="WirelessCar" />
-              }
-            >
-              WirelessCar
             </Tabs.Tab>
             <Tabs.Tab
               className={classes.tabs}
@@ -128,39 +110,13 @@ export function Experiences() {
             </Text>
             <List pb="xs" size="lg">
               <List.Item>
-                Designed and implemented the software part of MiniRobot project,
-                integrating ChatGPT and Whisper to gather user feedback and
-                provide information about the Segula company.
+                Designed and developed multiple serverless cloud microservices
+                from the ground up to deliver a reliable solution
               </List.Item>
               <List.Item>
-                Designed and launched an inhouse-project which was an assignment
-                collector that gathers opportunities from various portals,
-                enabling employees to browse and apply for new assignments and
-                inform their managers online.
+                Established a multi-stage CI/CD pipeline, leading to the
+                successful deployment of the application to production
               </List.Item>
-              <List.Item>
-                Developed a web application for Segula&apos;s employee
-                directory, enabling search and matching of specific skills for
-                work packages, improving team formation and productivity.
-              </List.Item>
-            </List>
-
-            <Text pb="xs" c="dimmed">
-              Skills: Java, Spring boot, Azure, MySql, CI/CD
-            </Text>
-            <Text pb="xs" c="dimmed" fs="italic">
-              The customers that I worked for as a consultant were WirelessCar
-              and GSM electric.
-            </Text>
-          </Tabs.Panel>
-          <Tabs.Panel value="GSM" className={classes.tabInner}>
-            <Title pb="xs">GSM Electric</Title>
-            <Text pb="xs" size="sm" fs="italic">
-              GSM electric is responsible for electrifying boats. Their web
-              application allows customers to configure and modify their boats
-              behavior and interact with it.
-            </Text>
-            <List pb="xs" size="lg">
               <List.Item>
                 Providing a convenient interface for electric boat owners to
                 access features such as charging, speed, and navigation
@@ -170,36 +126,33 @@ export function Experiences() {
                 class-based components and implementing best practices
               </List.Item>
               <List.Item>
-                Dockerized the application,resulting in improved efficiency and
-                portability
-              </List.Item>
-            </List>
-
-            <Text pb="xs" c="dimmed">
-              Skills: Java, Spring boot, React, MySQL, Docker, BitBucket, CI/CD,
-              HTML, CSS, JS
-            </Text>
-          </Tabs.Panel>
-          <Tabs.Panel value="WirelessCar" className={classes.tabInner}>
-            <Title pb="xs">WirelessCar</Title>
-            <Text pb="xs" size="sm" fs="italic">
-              WirelessCar has been fulfilling the link between the automotive
-              industry and the world of telecom technology, and create a one
-              stop shop for mobile e-services for vehicles.
-            </Text>
-            <List pb="xs" size="lg">
-              <List.Item>
-                Designed and developed multiple serverless cloud microservices
-                from the ground up to deliver a reliable solution
+                Developed an assignment collector tool that aggregates
+                opportunities from multiple portals, allowing employees to
+                browse and apply for new assignments online and inform their
+                managers.
               </List.Item>
               <List.Item>
-                Established a multi-stage CI/CD pipeline, leading to the
-                successful deployment of the application to production
+                Demonstrated strong skills in design and development, resulting
+                in the successful launch of the assignment collector.
+              </List.Item>
+              <List.Item>
+                Designed and implemented the software part of MiniRobot project,
+                integrating ChatGPT and Whisper to gather user feedback and
+                provide information about the Segula company.
+              </List.Item>
+              <List.Item>
+                Developed a web application for Segula&apos;s employee
+                directory, enabling search and matching of specific skills for
+                work packages, improving team formation and productivity.
               </List.Item>
             </List>
-
             <Text pb="xs" c="dimmed">
-              Skills: Java, Micronaut, AWS, CI/CD, Git, JUnit, AssertJ, Maven
+              Skills: Java, Spring boot, Micronaut, React, AWS, Azure, MySQL,
+              Docker, BitBucket, JUnit, AssertJ, Maven, CI/CD
+            </Text>
+            <Text pb="xs" c="dimmed" fs="italic">
+              The customers that I worked for as a consultant were WirelessCar
+              and GSM electric.
             </Text>
           </Tabs.Panel>
           <Tabs.Panel value="EstateGuru" className={classes.tabInner}>
