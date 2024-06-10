@@ -1,5 +1,5 @@
 import { ActionIcon, Container, Group, Text, Title } from "@mantine/core";
-import { BrandLinkedin, BrandTwitter, Mail } from "tabler-icons-react";
+import { BrandLinkedin, Mail } from "tabler-icons-react";
 import { useContactMeStyles } from "./useContactMeStyles";
 
 export function ContactMe() {
@@ -34,16 +34,6 @@ export function ContactMe() {
             href="https://www.linkedin.com/in/hamidfarmani/"
           >
             <BrandLinkedin size="3rem" strokeWidth={1} />
-          </ActionIcon>
-
-          <ActionIcon
-            size="xl"
-            variant="subtle"
-            component="a"
-            target="_blank"
-            href="https://twitter.com/Hamo_far/"
-          >
-            <BrandTwitter size="3rem" strokeWidth={1} />
           </ActionIcon>
 
           <ActionIcon

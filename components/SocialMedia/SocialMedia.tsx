@@ -2,7 +2,6 @@ import { ActionIcon, Container, Stack, Text } from "@mantine/core";
 import {
   BrandGithub,
   BrandLinkedin,
-  BrandTwitter,
   BrandYoutube,
   Mail,
 } from "tabler-icons-react";
@@ -39,15 +38,6 @@ export function SocialMedia() {
           href="https://www.linkedin.com/in/hamidfarmani/"
         >
           <BrandLinkedin size="1rem" />
-        </ActionIcon>
-
-        <ActionIcon
-          variant="subtle"
-          component="a"
-          target="_blank"
-          href="https://twitter.com/Hamo_far/"
-        >
-          <BrandTwitter size="1rem" />
         </ActionIcon>
 
         <ActionIcon
